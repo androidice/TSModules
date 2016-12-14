@@ -1,5 +1,5 @@
-///<reference path="./alerter.ts"/>
-function run(){
-  var alerter = new Alerter();
+import al = require('./alerter');
+export function run(){
+  var alerter = new al.Alerter();
   alerter.showMessage();
 }

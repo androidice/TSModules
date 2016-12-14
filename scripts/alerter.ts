@@ -1,16 +1,15 @@
-///<reference path="./dataservice.ts"/>
-
-interface IAlerter {
+import ds = require('./dataservice');
+export interface IAlerter {
   name: string;
   showMessage():void
 }
 
-var dataService: IDataService = new DataService();
+var dataService: ds.IDataService = new ds.DataService();
 
-class Alerter implements  IAlerter {
+export class Alerter implements  IAlerter {
   name = 'John Smith';
   showMessage(){
-    var msg = dataService.getMessage();
-    alert(msg+' '+this.name);
+   var msg = dataService.getMessage();
+   alert(msg+' '+this.name);
   }
 }

@@ -1,3 +1,3 @@
-///<reference path="./bootstrapper.ts"/>
-console.log('running with main 2');
-run();
+import bootstrapper = require('./bootstrapper');
+console.log('running with ds2');
+bootstrapper.run();
