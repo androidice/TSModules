@@ -1,4 +1,4 @@
-import ds = require('./dataservice');
+import ds = require('./dataservice.js');
 export interface IAlerter {
   name: string;
   showMessage():void

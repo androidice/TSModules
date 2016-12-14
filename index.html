@@ -1,6 +1,15 @@
 <html>
-  <head>
-    <script data-main="scripts/main" src="node_modules/requirejs/require.js"></script>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+      System.config({
+        meta: {
+          format: 'cjs'
+        }
+      });
+      System.import('scripts/main.js');
+    </script>
     <!--<script type="text/javascript" src="scripts/dataservice.js"></script>
     <script type="text/javascript" src="scripts/alerter.js"></script>
     <script type="text/javascript" src="scripts/bootstrapper.js"></script>

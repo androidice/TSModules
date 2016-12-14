@@ -1,8 +1,5 @@
-require.config({
-    baseUrl: 'scripts'
-});
-require(['bootstrapper'], function (boot) {
-    console.log('running with bootstrap config');
-    boot.run();
-});
+"use strict";
+var bootstrap = require('./bootstrapper.js');
+console.log('running with commonjs');
+bootstrap.run();
 //# sourceMappingURL=main.js.map
