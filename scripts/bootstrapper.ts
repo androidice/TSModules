@@ -1,4 +1,5 @@
 ///<reference path="./alerter.ts"/>
-
-var alerter = new Alerter();
-alerter.showMessage();
+function run(){
+  var alerter = new Alerter();
+  alerter.showMessage();
+}
