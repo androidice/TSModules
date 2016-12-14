@@ -11,6 +11,6 @@ class Alerter implements  IAlerter {
   name = 'John Smith';
   showMessage(){
     var msg = dataService.getMessage();
-    alert(msg);
+    alert(msg+' '+this.name);
   }
 }

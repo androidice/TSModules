@@ -5,7 +5,7 @@ var Alerter = (function () {
     }
     Alerter.prototype.showMessage = function () {
         var msg = dataService.getMessage();
-        alert(msg);
+        alert(msg + ' ' + this.name);
     };
     return Alerter;
 }());
