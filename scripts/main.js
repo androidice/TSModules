@@ -1,6 +1,8 @@
-define(["require", "exports", './bootstrapper'], function (require, exports, bootstrapper) {
-    "use strict";
-    console.log('running with ds2');
-    bootstrapper.run();
+require.config({
+    baseUrl: 'scripts'
+});
+require(['bootstrapper'], function (boot) {
+    console.log('running with bootstrap config');
+    boot.run();
 });
 //# sourceMappingURL=main.js.map
